@@ -1,11 +1,67 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css"
+    />
+  </head>
+  <body>
+    <ul class="gallery"></ul>
+    <script src="style.css"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Image Gallery</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css
+"
+      rel="stylesheet"
+    />
+
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px, auto;
+        list-style: none;
+        padding: 0;
+      }
+      .gallery-item {
+        flex-basis: calc(33.333% - 10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .gallery-link {
+        display: block;
+      }
+      .gallery-image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <h1>This is an example project</h1>
+    <script src="style.css"></script>
+    <ul class="gallery"></ul>
+
+    <script
+      async
+      src="
+https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js
+"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
